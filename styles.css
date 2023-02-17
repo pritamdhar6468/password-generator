@@ -5,3 +5,21 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #4285f4;
+}
+.container{
+    width: 450px;
+    background: #fff;
+    border-radius: 8px;
+}
+.container h2{
+    font-weight: 600;
+    font-size: 1.31rem;
+    padding: 1rem 1.175rem;
+    border-bottom: 1px solid #d4dbe5;
+}
