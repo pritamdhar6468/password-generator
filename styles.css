@@ -82,3 +82,31 @@ body{
     flex-wrap: wrap;
     margin-top: 1rem;
 }
+.pass-setting .options .option{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: calc(100% / 2);
+}
+.options .option input{
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+.options .option label{
+    cursor: pointer;
+    padding-left: 0.63rem;
+}
+.wrapper .generate-btn{
+    width: 100%;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #4285f4;
+    font-size: 1.06rem;
+    padding: 0.94rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin: 0.94rem 0 1.3rem;
+}
