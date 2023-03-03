@@ -13,13 +13,16 @@ const characters = {
 
 const generatePassword =() =>{
     let staticPassword = "";
-
+    passLength = lengthSlider.value;
     options.forEach(option => {
         if(option.checked) {
             //adding particular key value from character object to staticpassword
             staticPassword += characters[option.id];
         }
     });
+    for (let i=0; i<passLength; i++){
+        randomPassword += staticPassword[Math.floor(Math.random() * staticPassword.length)]
+    }
 }
 
 const updateSlider = () =>{
