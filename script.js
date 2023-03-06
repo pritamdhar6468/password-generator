@@ -12,12 +12,21 @@ const characters = {
 
 
 const generatePassword =() =>{
-    let staticPassword = "";
+    let staticPassword = "",
+    randomPassword="",
+    excludeDuplicate = false,
     passLength = lengthSlider.value;
     options.forEach(option => {
         if(option.checked) {
-            //adding particular key value from character object to staticpassword
-            staticPassword += characters[option.id];
+            if(option.id !== "exc-duplicates" && option.id !== "spaces"){
+                
+                //adding particular key value from character object to staticpassword
+                staticPassword += characters[option.id];
+            }else if(option.id === "spaces" ){
+                staticPassword += ` ${staticPassword} `;
+            }else{
+                excludeDuplicate = true;
+            }
         }
     });
     for (let i=0; i<passLength; i++){
