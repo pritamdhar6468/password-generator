@@ -15,4 +15,4 @@
 
 * Use JavaScript to update the password field in the HTML form with the generated password.
 
-* Add a button to the HTML form to allow the user to generate a new password whenever they wish.
+
